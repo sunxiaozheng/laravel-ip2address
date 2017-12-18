@@ -18,5 +18,5 @@
             "Sunxiaozheng\\Ip2Address\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
