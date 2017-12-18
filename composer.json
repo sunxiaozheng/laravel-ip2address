@@ -1,8 +1,6 @@
 {
     "name": "sunxiaozheng/laravel-ip2address",
-    "description": "Convert the IP address into a real address",
-    "keywords": ["ip", "address", "location", "chinese"],
-    "type": "library",
+    "description": "an example of composer package.",
     "license": "MIT",
     "authors": [
         {
@@ -10,13 +8,11 @@
             "email": "936176900@qq.com"
         }
     ],
-    "require": {
-        "php": ">=7.0"
-    },
+    "minimum-stability": "dev",
+    "require": {},
     "autoload": {
         "psr-4": {
-            "Sunxiaozheng\\Ip2Address\\": "src/"
+            "Hello\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
