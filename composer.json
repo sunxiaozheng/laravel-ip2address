@@ -18,8 +18,5 @@
             "Sunxiaozheng\\Ip2Address\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "require-dev": {
-        "illuminate/framework": "5.5.x"
-    }
+    "minimum-stability": "dev"
 }
