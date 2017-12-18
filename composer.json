@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "shawnsun\\Ip2Address\\": "src/"
+            "Sunxiaozheng\\Ip2Address\\": "src/"
         }
     },
     "minimum-stability": "dev",
