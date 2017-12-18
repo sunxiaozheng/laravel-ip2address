@@ -1,5 +1,5 @@
 {
-    "name": "shawnsun/laravel-ip2address",
+    "name": "sunxiaozheng/laravel-ip2address",
     "description": "Convert the IP address into a real address",
     "keywords": ["ip", "address", "location", "chinese"],
     "type": "library",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Shawnsun\\Ip2Address\\": "src/"
+            "shawnsun\\Ip2Address\\": "src/"
         }
     },
     "minimum-stability": "dev",
