@@ -1,0 +1,25 @@
+{
+    "name": "shawnsun/laravel-ip2address",
+    "description": "Convert the IP address into a real address",
+    "keywords": ["ip", "address", "location", "chinese"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shawn Sun",
+            "email": "ershawnsun@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shawnsun\\Ip2Address\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "illuminate/framework": "5.5.x"
+    }
+}
