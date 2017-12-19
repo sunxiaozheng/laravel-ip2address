@@ -1,6 +1,7 @@
 {
     "name": "sunxiaozheng/laravel-ip2address",
-    "description": "an example of composer package.",
+    "description": "Get location information based on IP address.",
+    "keywords": ["ip", "location", "address"],
     "license": "MIT",
     "authors": [
         {
@@ -8,11 +9,18 @@
             "email": "936176900@qq.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
     "autoload": {
         "psr-4": {
-            "Hello\\": "src/"
+            "Sunxiaozheng\\Ip\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Ip": "Sunxiaozheng\\Ip\\Location"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
 }
