@@ -2,6 +2,7 @@
     "name": "sunxiaozheng/laravel-ip2location",
     "description": "Get location information based on IP address.",
     "keywords": ["ip", "location", "address"],
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
