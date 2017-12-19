@@ -2,7 +2,6 @@
     "name": "sunxiaozheng/laravel-ip2location",
     "description": "Get location information based on IP address.",
     "keywords": ["ip", "location", "address"],
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -10,11 +9,14 @@
             "email": "936176900@qq.com"
         }
     ],
+    "require": {},
     "autoload": {
         "psr-4": {
             "Sunxiaozheng\\Ip\\": "src/"
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "aliases": {
@@ -22,8 +24,6 @@
             }
         }
     },
-    "minimum-stability": "dev",
-    "require": {},
     "require-dev": {
         "phpunit/phpunit": "~6.0"
     }
