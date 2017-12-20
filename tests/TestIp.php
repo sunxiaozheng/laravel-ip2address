@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Sunxiaozheng\Ip\Location;
+use Sunxiaozheng\Ip\Addr;
 
 class TestIp
 {
@@ -22,7 +22,7 @@ class TestIp
          */
         $ip = '1.86.10.173';
         $param = 'prov';
-        echo Location::get($ip, $param);
+        echo Addr::get($ip, $param);
     }
 
 }

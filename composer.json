@@ -1,7 +1,7 @@
 {
-    "name": "sunxiaozheng/laravel-ip2location",
+    "name": "sunxiaozheng/laravel-ip2address",
     "description": "Get location information based on IP address.",
-    "keywords": ["ip", "location", "address"],
+    "keywords": ["ip", "address", "location"],
     "license": "MIT",
     "authors": [
         {
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "Ip": "Sunxiaozheng\\Ip\\Location"
+                "Ip": "Sunxiaozheng\\Ip\\Addr"
             }
         }
     },
