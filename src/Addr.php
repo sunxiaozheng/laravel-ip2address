@@ -45,7 +45,7 @@ class Addr
      * @param string $filename 
      * @return IpLocation 
      */
-    public static function construct($filename = "qqwry.dat")
+    private static function construct($filename = "qqwry.dat")
     {
         static::$fp = 0;
         if ((static::$fp = fopen(dirname(__FILE__) . '/' . $filename, 'rb')) !== false) {
@@ -148,7 +148,7 @@ class Addr
      * @param string $ip 
      * @return array 
      */
-    public static function getlocation($ip = '')
+    private static function getlocation($ip = '')
     {
         static::construct();
 
