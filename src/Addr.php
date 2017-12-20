@@ -155,7 +155,7 @@ class Addr
         if (!static::$fp)
             return null;            // 如果数据文件没有被正确打开，则直接返回空 
         if (empty($ip))
-            $ip = get_client_ip();
+            $ip = static::get_client_ip();
         $location['ip'] = gethostbyname($ip);   // 将输入的域名转化为IP地址 
         $ip = static::packip($location['ip']);   // 将输入的IP地址转化为可比较的IP地址 
         // 不合法的IP地址会被转化为255.255.255.255 
@@ -240,6 +240,37 @@ class Addr
         if (empty($location['city']))
             $location['city'] = $location['country'];
         return $location;
+    }
+
+    /**
+     * 获取客户端IP
+     * @param integer $type 0 返回IP地址 1 返回IP地址数字
+     */
+    private static function get_client_ip($type = 0)
+    {
+        $type = $type ? 1 : 0;
+        static $ip = NULL;
+        if ($ip !== NULL)
+            return $ip[$type];
+        if ($_SERVER['HTTP_X_REAL_IP']) {//nginx 代理模式下，获取客户端真实IP
+            $ip = $_SERVER['HTTP_X_REAL_IP'];
+        } elseif (isset($_SERVER['HTTP_CLIENT_IP'])) {//客户端的ip
+            $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {//浏览当前页面的用户计算机的网关
+            $arr = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+            $pos = array_search('unknown', $arr);
+            if (false !== $pos)
+                unset($arr[$pos]);
+            $ip = trim($arr[0]);
+        } elseif (isset($_SERVER['REMOTE_ADDR'])) {
+            $ip = $_SERVER['REMOTE_ADDR']; //浏览当前页面的用户计算机的ip地址
+        } else {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
+        // IP地址合法验证
+        $long = sprintf("%u", ip2long($ip));
+        $ip = $long ? array($ip, $long) : array('0.0.0.0', 0);
+        return $ip[$type];
     }
 
     /**
