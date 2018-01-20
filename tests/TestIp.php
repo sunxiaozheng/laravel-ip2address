@@ -10,7 +10,7 @@ class TestIp
     /**
      * 测试文件（作者好不专业，竟然没用PHPunit）
      * 
-     * @author Shawn Sun <ershawnsun@gmail.com>
+     * @author Shawn Sun <pgshawnsun@gmail.com>
      * @version 1.0.0.1219
      */
     public function test()
