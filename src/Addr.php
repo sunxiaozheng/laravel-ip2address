@@ -6,7 +6,7 @@ namespace Sunxiaozheng\Ip;
  * 地理位置查询类
  * 使用纯真IP地址库 支持查询省和城市
  * 由于使用UTF8编码 如果使用纯真IP地址库的话 需要对返回结果进行编码转换 
- * @author Shawn Sun <pgshawnsun@gmail.com>
+ * @author Shawn Sun <pgshawn@qq.com>
  */
 class Addr
 {
