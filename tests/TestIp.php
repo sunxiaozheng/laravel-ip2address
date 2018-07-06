@@ -11,7 +11,7 @@ class TestIp
      * 测试文件（作者好不专业，竟然没用PHPunit）
      * 
      * @author Shawn Sun <pgshawn@qq.com>
-     * @version 1.0.0.1219
+     * @version 0.1.0 2017-12-19
      */
     public function test()
     {
