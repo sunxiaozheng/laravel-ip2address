@@ -40,6 +40,7 @@ $param = '';
  */
 var_dump(Addr::get($ip, $param));
 ```
+
 2. laravel用户
 - 在 app/config/app.php(Laravel 4) 或 config/app.php(Laravel 5.0 - 5.4)，或者你自定义配置的 app.php 文件内添加，如果是 Laravel 5.5 ，支持扩展包发现，不需要添加下面的代码
 
