@@ -20,7 +20,7 @@
 ### 举个栗子
 
 #### 安装
-`composer require sunxiaozheng/ip2address`
+`composer require sunxiaozheng/laravel-ip2address`
 
 #### 使用
 1. 非laravel用户
