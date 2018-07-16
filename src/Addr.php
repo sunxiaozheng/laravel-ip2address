@@ -8,7 +8,7 @@ namespace Sunxiaozheng\Ip;
  * 由于使用UTF8编码 如果使用纯真IP地址库的话 需要对返回结果进行编码转换 
  * 
  * @author Shawn Sun <pgshawn@qq.com>
- * @version 0.1.0 2017-12-19
+ * @version 1.0.0 2017-12-19
  */
 class Addr {
 
