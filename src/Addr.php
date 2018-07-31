@@ -269,7 +269,8 @@ class Addr {
 	 * 封装一个 get 方法
 	 * @param string $ip IP地址
 	 * @param string $param 具体信息
-	 * @version 1.0.0.1219
+	 * @author Shawn Sun <pgshawn@qq.com>
+	 * @version 1.0.0 2017-12-19
 	 * cy:city prov:province net:newwork
 	 */
 	public static function get($ip = '', $param = '') {
